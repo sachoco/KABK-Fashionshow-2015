@@ -1,0 +1,200 @@
+
+body {
+	height: 100%;
+}
+
+.mobile-only {
+	display: block !important;
+}
+.non-mobile-only {
+	display: none !important;
+}
+
+#header {
+	position: relative;
+	box-sizing: border-box;
+	font-size: initial;
+	padding-left: 20px;
+	h2 {
+		width: 230px;
+		span {
+			display: block;
+		}
+	}
+	.year {
+
+	}
+	height: 72px;
+}	
+
+#intro {
+	box-sizing: border-box;
+	padding: 20px;
+	position: relative;
+	height: calc( 100% - 72px );
+	//margin-bottom: 2vh;
+	vertical-align: top;
+	text-align: left;
+	font-size: initial;
+	.mobile-intro {
+		position: relative;
+		height: 100%;
+		display: table;
+		z-index: 8;
+		.left-col, .right-col {
+			display: table-cell;
+			vertical-align: middle;
+			width: 50%;
+			box-sizing: border-box;
+			img {
+				max-width: 100%;
+			}
+		}
+		.left-col {
+			text-align: right;
+		}
+		.right-col {
+			text-align: left;
+		}
+	}
+	.intro {
+		display: none;
+		
+	}
+	>a {
+		position: relative;
+		float: left;
+		padding: 1.5vh;
+		display: none;
+		&.title {
+			border: solid 1px;
+			z-index: 1;
+		}
+		&.tickets {
+			z-index: 9;
+			background-color: white;
+			border: solid 1px white;
+			float: right;
+
+		}
+	}
+	.powered_by {
+		display: none;
+		margin: 1.5vh;
+		font-size: 0.7em;
+
+	}
+}
+
+
+#main {
+	//height: 100%;
+
+	h2 {
+
+		// display: inline-block;
+		// position: relative;
+		// left: 50%;
+		// margin: 20px;
+		// @include translateX(-50%);
+	}
+	.heading {
+		padding-left: 30px;
+	}
+	.presenters {
+		
+		li {
+		}
+		a {
+			
+		}
+		.oneliner {
+			display: none;
+		}
+
+		.content {
+			width: 90%;
+			left: 20px;
+			background-color: $background-color;
+			border: solid 1px;
+			padding: 10px;
+			.oneliner {
+				display: block;
+				font-size: 5vh;
+				line-height: 110%;
+				margin-bottom: 20px;
+			}
+			.profile-image {
+				position: relative;
+			}
+			.profile-text {
+				position: relative;
+				left: 0;
+				width: auto;
+				
+				
+				a {
+					
+					&:hover {
+						
+					}
+				}
+			}
+			&.align-bottom {
+				.profile-image {
+					bottom: auto;
+
+				}
+				.profile-text {
+					bottom: auto;
+				}
+			}
+		}
+	}
+}
+
+#back {
+	display: block;
+	height: 100%;
+	text-align: center;
+	a {
+		position: relative;
+		top: 45%;
+	}
+}
+
+#footer {
+	box-sizing: border-box;
+	display: block;
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	bottom: 0;
+	padding: 20px 20px 0 20px;
+	background-color: $background-color;
+	text-transform: uppercase;
+	font-size: 14px;
+	>a {
+		color: $text-color;
+		text-decoration: none;
+		position: relative;
+		float: left;
+		padding: 10px;
+		&.title {
+			border: solid 1px;
+			z-index: 1;
+		}
+		&.tickets {
+			z-index: 9;
+			background-color: white;
+			border: solid 1px white;
+			float: right;
+
+		}
+	}
+	.powered_by {
+		margin: 1.5vh;
+		font-size: 0.7em;
+		clear: both;
+	}
+}

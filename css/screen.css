@@ -1,0 +1,473 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background: #F74512;
+  font-family: "Times New Roman", Times, serif;
+  color: #000000;
+}
+
+h1, h2 {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+em {
+  font-style: italic;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.sans-serif, #main .presenters .oneliner {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.mobile-only {
+  display: none !important;
+}
+
+.underline {
+  border-bottom: 1px solid;
+}
+
+.clear {
+  clear: both;
+}
+
+#header {
+  position: relative;
+  font-size: 1.2em;
+  padding: 20px 20px 5px;
+  padding-left: 32vh;
+}
+#header h2 span {
+  display: block;
+}
+#header .year {
+  position: absolute;
+  right: 5vw;
+  top: 20px;
+}
+#header .year li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+#intro {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  vertical-align: top;
+  text-align: center;
+  font-size: 3vh;
+  z-index: 1;
+}
+#intro .info {
+  position: absolute;
+  background: white;
+  padding: 20px;
+  z-index: 9999;
+  bottom: 12vh;
+  left: 0%;
+  margin-left: 60vh;
+  font-size: 2vw;
+}
+#intro .info tr td {
+  padding-top: 20px;
+  padding-left: 20px;
+  vertical-align: top;
+}
+#intro .info tr td:nth-child(1) {
+  padding-left: 0;
+}
+#intro .info tr:nth-child(1) td {
+  padding-top: 0;
+}
+#intro .mobile-intro {
+  display: none;
+}
+#intro .intro {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 50px 0 7vh 12vh;
+  z-index: 8;
+  text-align: left;
+  overflow: visible;
+  white-space: nowrap;
+}
+#intro .intro ul {
+  height: 100%;
+}
+#intro .intro ul li {
+  display: inline-block;
+  height: 100%;
+}
+#intro .intro ul li.margin-right {
+  margin-right: 9vh;
+}
+#intro .intro img {
+  height: 100%;
+}
+#intro .intro .row {
+  display: table;
+  height: 100%;
+}
+#intro .intro .left-col, #intro .intro .right-col {
+  display: table-cell;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+#intro .intro .left-col img, #intro .intro .right-col img {
+  height: 100%;
+}
+#intro .intro .left-col {
+  background-color: pink;
+  height: 100%;
+  margin-right: 5vw;
+}
+#intro .intro .right-col {
+  background-color: orange;
+  height: 100%;
+}
+#intro > a {
+  position: relative;
+  text-decoration: none;
+  color: #000000;
+  display: inline-block;
+  padding: 1.5vh;
+}
+#intro > a.title {
+  border: solid 1px;
+  z-index: 1;
+}
+#intro > a.tickets {
+  z-index: 9;
+  background-color: white;
+  border: solid 1px white;
+}
+#intro .powered_by {
+  margin: 1.5vh;
+  font-size: 0.7em;
+}
+
+#main .heading {
+  position: relative;
+  font-size: 1.2em;
+  padding-left: 32vh;
+  text-transform: uppercase;
+}
+#main .presenters {
+  white-space: nowrap;
+  font-size: 7vh;
+  line-height: 110%;
+  margin-left: 30px;
+}
+#main .presenters li {
+  position: relative;
+}
+#main .presenters a {
+  margin: 10px 5px;
+  color: #62FC8B;
+  text-decoration: none;
+}
+#main .presenters a:hover, #main .presenters a.active {
+  color: #000000;
+}
+#main .presenters .oneliner {
+  font-size: 0.7em;
+  font-style: normal;
+  font-weight: 100;
+  color: #F74512;
+  line-height: initial;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+#main .presenters .content {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  left: 30vh;
+  font-size: initial;
+  line-height: initial;
+  width: calc(95% - 30vh);
+  max-width: 800px;
+}
+#main .presenters .content .content-inner {
+  display: table;
+}
+#main .presenters .content .oneliner {
+  display: none;
+}
+#main .presenters .content .profile-image {
+  display: table-cell;
+  vertical-align: top;
+}
+#main .presenters .content .profile-image img {
+  height: 38vh;
+}
+#main .presenters .content .profile-text {
+  white-space: normal;
+  display: table-cell;
+  vertical-align: top;
+  position: relative;
+}
+#main .presenters .content .profile-text a {
+  font-style: normal;
+  color: #000000;
+  text-decoration: underline;
+}
+#main .presenters .content .close {
+  display: table-cell;
+  vertical-align: top;
+}
+#main .presenters .content.align-bottom {
+  bottom: 7vh;
+}
+
+#back {
+  display: none;
+}
+
+#footer {
+  display: none;
+}
+
+/*********************
+LARGER MOBILE DEVICES
+This is for devices like the Galaxy Note or something that's
+larger than an iPhone but smaller than a tablet. Let's call them
+tweeners.
+*********************/
+@media only screen and (max-width: 481px) {
+  body {
+    height: 100%;
+  }
+
+  .mobile-only {
+    display: block !important;
+  }
+
+  .non-mobile-only {
+    display: none !important;
+  }
+
+  #header {
+    position: relative;
+    box-sizing: border-box;
+    font-size: initial;
+    padding-left: 20px;
+    height: 72px;
+  }
+  #header h2 {
+    width: 230px;
+  }
+  #header h2 span {
+    display: block;
+  }
+
+  #intro {
+    box-sizing: border-box;
+    padding: 20px;
+    position: relative;
+    height: calc( 100% - 72px );
+    vertical-align: top;
+    text-align: left;
+    font-size: initial;
+  }
+  #intro .mobile-intro {
+    position: relative;
+    height: 100%;
+    display: table;
+    z-index: 8;
+  }
+  #intro .mobile-intro .left-col, #intro .mobile-intro .right-col {
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+    box-sizing: border-box;
+  }
+  #intro .mobile-intro .left-col img, #intro .mobile-intro .right-col img {
+    max-width: 100%;
+  }
+  #intro .mobile-intro .left-col {
+    text-align: right;
+  }
+  #intro .mobile-intro .right-col {
+    text-align: left;
+  }
+  #intro .intro {
+    display: none;
+  }
+  #intro > a {
+    position: relative;
+    float: left;
+    padding: 1.5vh;
+    display: none;
+  }
+  #intro > a.title {
+    border: solid 1px;
+    z-index: 1;
+  }
+  #intro > a.tickets {
+    z-index: 9;
+    background-color: white;
+    border: solid 1px white;
+    float: right;
+  }
+  #intro .powered_by {
+    display: none;
+    margin: 1.5vh;
+    font-size: 0.7em;
+  }
+
+  #main .heading {
+    padding-left: 30px;
+  }
+  #main .presenters .oneliner {
+    display: none;
+  }
+  #main .presenters .content {
+    width: 90%;
+    left: 20px;
+    background-color: #F74512;
+    border: solid 1px;
+    padding: 10px;
+  }
+  #main .presenters .content .oneliner {
+    display: block;
+    font-size: 5vh;
+    line-height: 110%;
+    margin-bottom: 20px;
+  }
+  #main .presenters .content .profile-image {
+    position: relative;
+  }
+  #main .presenters .content .profile-text {
+    position: relative;
+    left: 0;
+    width: auto;
+  }
+  #main .presenters .content.align-bottom .profile-image {
+    bottom: auto;
+  }
+  #main .presenters .content.align-bottom .profile-text {
+    bottom: auto;
+  }
+
+  #back {
+    display: block;
+    height: 100%;
+    text-align: center;
+  }
+  #back a {
+    position: relative;
+    top: 45%;
+  }
+
+  #footer {
+    box-sizing: border-box;
+    display: block;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    bottom: 0;
+    padding: 20px 20px 0 20px;
+    background-color: #F74512;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  #footer > a {
+    color: #000000;
+    text-decoration: none;
+    position: relative;
+    float: left;
+    padding: 10px;
+  }
+  #footer > a.title {
+    border: solid 1px;
+    z-index: 1;
+  }
+  #footer > a.tickets {
+    z-index: 9;
+    background-color: white;
+    border: solid 1px white;
+    float: right;
+  }
+  #footer .powered_by {
+    margin: 1.5vh;
+    font-size: 0.7em;
+    clear: both;
+  }
+}
+
+/*# sourceMappingURL=screen.css.map */
